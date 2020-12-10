@@ -55,7 +55,7 @@ public class Book {
 	}
 	
 	
-	// Other getters and setters
+	// Pre - Setters
 	@PrePersist
 	protected void onCreate() {
 		this.createdAt = new Date();
@@ -65,4 +65,54 @@ public class Book {
 	protected void onUpdate() {
 		this.updatedAt = new Date();
 	}
+	
+	
+	// Getters and Setters
+	// ID
+	public Long getId() {
+		return id;
+	}
+	
+	// Title
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	
+	// Description
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	
+	// Language
+	public String getLanguage() {
+		return language;
+	}
+	public void setLanguage(String language) {
+		this.language = language;
+	}
+	
+	// Number of Pages
+	public Integer getNumberOfPages() {
+		return numberOfPages;
+	}
+	public void setNumberOfPages(Integer numberOfPages) {
+		this.numberOfPages = numberOfPages;
+	}
+	
+	// Date Created
+	public Date getCreatedAt() {
+		return createdAt;
+	}
+	
+	// Date Updated
+	public Date getUpdatedAt() {
+		return updatedAt;
+	}
+	
 }
