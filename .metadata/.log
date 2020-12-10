@@ -887,3 +887,45 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.ui 2 2 2020-12-09 21:49:21.826
 !MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-09 21:53:27.433
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-09 21:53:27.434
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@5a07088b[org.springframework.tooling.boot.ls:1.23.0.202010230633(id=673)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-09 21:53:27.434
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-09 21:53:30.652
+!MESSAGE Boot LS startup time from start to initialized: 3216ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-09 21:53:30.778
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.kZJwimzJisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-09 21:53:30.778
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-09 21:53:30.779
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-09 21:53:30.780
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-09 21:53:30.780
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-09 21:53:30.781
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.kZJwimzJ => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-09 21:53:30.787
+!MESSAGE classpath=93 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-09 21:53:30.792
+!MESSAGE buffering callback sts4.classpath.kZJwimzJ mvc false 93
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-09 21:53:30.793
+!MESSAGE executing callback sts4.classpath.kZJwimzJ 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-09 21:53:30.889
+!MESSAGE executing callback sts4.classpath.kZJwimzJ SUCCESS [done]
