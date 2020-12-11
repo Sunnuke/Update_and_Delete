@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.Size;
@@ -45,7 +46,6 @@ public class Book {
 	
 	
 	public Book() {
-		
 	}
 	public Book(String title, String desc, String lang, int pages) {
 		this.title = title;
@@ -55,13 +55,13 @@ public class Book {
 	}
 	
 	
-	// Pre - Setters
+	// PreSetters
 	@PrePersist
 	protected void onCreate() {
 		this.createdAt = new Date();
 	}
 	
-	@PrePersist
+	@PreUpdate
 	protected void onUpdate() {
 		this.updatedAt = new Date();
 	}
