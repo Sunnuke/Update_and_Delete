@@ -59,13 +59,19 @@ public class BooksController {
     }
     
     @RequestMapping(value="/books/{id}", method=RequestMethod.PUT)
-    public String update(@Valid @ModelAttribute("book") Book book, BindingResult result) {
+    public String update(@Valid @ModelAttribute("book") Book book, BindingResult result, @PathVariable("id") Long id) {
         if (result.hasErrors()) {
             return "/books/edit.jsp";
         } else {
-            bookService.updateBook(book);
+            bookService.updateBook(book, id);
             return "redirect:/books";
         }
+    }
+    
+    @RequestMapping(value="/books/{id}", method=RequestMethod.DELETE)
+    public String destroy(@PathVariable("id") Long id) {
+        bookService.deleteBook(id);
+        return "redirect:/books";
     }
     
 }
